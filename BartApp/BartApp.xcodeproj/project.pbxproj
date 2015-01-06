@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F86126E1A5B870000789682 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60A1A5B86030035CE3A /* Station.swift */; };
+		3F86126F1A5B870000789682 /* StationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60B1A5B86030035CE3A /* StationStore.swift */; };
+		3F8612701A5B870000789682 /* BartStationsXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60C1A5B86030035CE3A /* BartStationsXMLParser.swift */; };
+		3F8612711A5B870000789682 /* ApiXmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60D1A5B86030035CE3A /* ApiXmlParser.swift */; };
+		3F8612721A5B870000789682 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60E1A5B86030035CE3A /* Constants.swift */; };
+		3F8612731A5B870000789682 /* BartApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60F1A5B86030035CE3A /* BartApi.swift */; };
+		3F8612741A5B870000789682 /* BartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C6101A5B86030035CE3A /* BartHelpers.swift */; };
+		3F8612751A5B870000789682 /* RichString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C6111A5B86030035CE3A /* RichString.swift */; };
+		3F8612801A5B872900789682 /* bart_stations.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F8612771A5B872900789682 /* bart_stations.xml */; };
+		3F8612811A5B872900789682 /* sample_api_out.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F8612781A5B872900789682 /* sample_api_out.xml */; };
+		3F8612821A5B872900789682 /* sample_api_out_2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F8612791A5B872900789682 /* sample_api_out_2.xml */; };
+		3F8612831A5B872900789682 /* sample_dest_api_out.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F86127A1A5B872900789682 /* sample_dest_api_out.xml */; };
+		3F8612841A5B872900789682 /* sample_estimates_16th.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F86127B1A5B872900789682 /* sample_estimates_16th.xml */; };
+		3F8612851A5B872900789682 /* sample_estimates_api_out_bad.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F86127C1A5B872900789682 /* sample_estimates_api_out_bad.xml */; };
+		3F8612861A5B872900789682 /* sample_routeinfo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F86127D1A5B872900789682 /* sample_routeinfo.xml */; };
+		3F8612871A5B872900789682 /* sample_routes_api.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F86127E1A5B872900789682 /* sample_routes_api.xml */; };
+		3F8612881A5B872900789682 /* sample_stations.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3F86127F1A5B872900789682 /* sample_stations.xml */; };
+		3F8612951A5B8C5300789682 /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8612901A5B8C3E00789682 /* BrightFutures.framework */; };
+		3F96C5EB1A5B85E90035CE3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C5EA1A5B85E90035CE3A /* AppDelegate.swift */; };
+		3F96C5ED1A5B85E90035CE3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C5EC1A5B85E90035CE3A /* ViewController.swift */; };
+		3F96C5F01A5B85E90035CE3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F96C5EE1A5B85E90035CE3A /* Main.storyboard */; };
+		3F96C5F21A5B85E90035CE3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F96C5F11A5B85E90035CE3A /* Images.xcassets */; };
+		3F96C5F51A5B85E90035CE3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F96C5F31A5B85E90035CE3A /* LaunchScreen.xib */; };
+		3F96C6011A5B85E90035CE3A /* BartAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C6001A5B85E90035CE3A /* BartAppTests.swift */; };
+		3F96C6121A5B86030035CE3A /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60A1A5B86030035CE3A /* Station.swift */; };
+		3F96C6131A5B86030035CE3A /* StationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60B1A5B86030035CE3A /* StationStore.swift */; };
+		3F96C6141A5B86030035CE3A /* BartStationsXMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60C1A5B86030035CE3A /* BartStationsXMLParser.swift */; };
+		3F96C6151A5B86030035CE3A /* ApiXmlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60D1A5B86030035CE3A /* ApiXmlParser.swift */; };
+		3F96C6161A5B86030035CE3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60E1A5B86030035CE3A /* Constants.swift */; };
+		3F96C6171A5B86030035CE3A /* BartApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C60F1A5B86030035CE3A /* BartApi.swift */; };
+		3F96C6181A5B86030035CE3A /* BartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C6101A5B86030035CE3A /* BartHelpers.swift */; };
+		3F96C6191A5B86030035CE3A /* RichString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C6111A5B86030035CE3A /* RichString.swift */; };
+		3F96C61B1A5B860B0035CE3A /* StationStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F96C61A1A5B860B0035CE3A /* StationStoreTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F86128F1A5B8C3E00789682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F86128A1A5B8C3E00789682 /* BrightFutures.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9DF0815194470060083F7F2;
+			remoteInfo = BrightFutures;
+		};
+		3F8612911A5B8C3E00789682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F86128A1A5B8C3E00789682 /* BrightFutures.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9DF0820194470060083F7F2;
+			remoteInfo = BrightFuturesTests;
+		};
+		3F8612931A5B8C4C00789682 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F86128A1A5B8C3E00789682 /* BrightFutures.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E9DF0814194470060083F7F2;
+			remoteInfo = BrightFutures;
+		};
+		3F96C5FB1A5B85E90035CE3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F96C5DD1A5B85E90035CE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F96C5E41A5B85E90035CE3A;
+			remoteInfo = BartApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F8612771A5B872900789682 /* bart_stations.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = bart_stations.xml; sourceTree = "<group>"; };
+		3F8612781A5B872900789682 /* sample_api_out.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample_api_out.xml; sourceTree = "<group>"; };
+		3F8612791A5B872900789682 /* sample_api_out_2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample_api_out_2.xml; sourceTree = "<group>"; };
+		3F86127A1A5B872900789682 /* sample_dest_api_out.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample_dest_api_out.xml; sourceTree = "<group>"; };
+		3F86127B1A5B872900789682 /* sample_estimates_16th.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample_estimates_16th.xml; sourceTree = "<group>"; };
+		3F86127C1A5B872900789682 /* sample_estimates_api_out_bad.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample_estimates_api_out_bad.xml; sourceTree = "<group>"; };
+		3F86127D1A5B872900789682 /* sample_routeinfo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample_routeinfo.xml; sourceTree = "<group>"; };
+		3F86127E1A5B872900789682 /* sample_routes_api.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample_routes_api.xml; sourceTree = "<group>"; };
+		3F86127F1A5B872900789682 /* sample_stations.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sample_stations.xml; sourceTree = "<group>"; };
+		3F86128A1A5B8C3E00789682 /* BrightFutures.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BrightFutures.xcodeproj; path = ../BrightFutures/BrightFutures.xcodeproj; sourceTree = "<group>"; };
+		3F96C5E51A5B85E90035CE3A /* BartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F96C5E91A5B85E90035CE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F96C5EA1A5B85E90035CE3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F96C5EC1A5B85E90035CE3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F96C5EF1A5B85E90035CE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F96C5F11A5B85E90035CE3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3F96C5F41A5B85E90035CE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3F96C5FA1A5B85E90035CE3A /* BartAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BartAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F96C5FF1A5B85E90035CE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F96C6001A5B85E90035CE3A /* BartAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BartAppTests.swift; sourceTree = "<group>"; };
+		3F96C60A1A5B86030035CE3A /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		3F96C60B1A5B86030035CE3A /* StationStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationStore.swift; sourceTree = "<group>"; };
+		3F96C60C1A5B86030035CE3A /* BartStationsXMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartStationsXMLParser.swift; sourceTree = "<group>"; };
+		3F96C60D1A5B86030035CE3A /* ApiXmlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiXmlParser.swift; sourceTree = "<group>"; };
+		3F96C60E1A5B86030035CE3A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3F96C60F1A5B86030035CE3A /* BartApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartApi.swift; sourceTree = "<group>"; };
+		3F96C6101A5B86030035CE3A /* BartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BartHelpers.swift; sourceTree = "<group>"; };
+		3F96C6111A5B86030035CE3A /* RichString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RichString.swift; sourceTree = "<group>"; };
+		3F96C61A1A5B860B0035CE3A /* StationStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationStoreTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F96C5E21A5B85E90035CE3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8612951A5B8C5300789682 /* BrightFutures.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F96C5F71A5B85E90035CE3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F8612761A5B872900789682 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3F8612771A5B872900789682 /* bart_stations.xml */,
+				3F8612781A5B872900789682 /* sample_api_out.xml */,
+				3F8612791A5B872900789682 /* sample_api_out_2.xml */,
+				3F86127A1A5B872900789682 /* sample_dest_api_out.xml */,
+				3F86127B1A5B872900789682 /* sample_estimates_16th.xml */,
+				3F86127C1A5B872900789682 /* sample_estimates_api_out_bad.xml */,
+				3F86127D1A5B872900789682 /* sample_routeinfo.xml */,
+				3F86127E1A5B872900789682 /* sample_routes_api.xml */,
+				3F86127F1A5B872900789682 /* sample_stations.xml */,
+			);
+			name = Data;
+			path = BartApp/Data;
+			sourceTree = "<group>";
+		};
+		3F86128B1A5B8C3E00789682 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F8612901A5B8C3E00789682 /* BrightFutures.framework */,
+				3F8612921A5B8C3E00789682 /* BrightFuturesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F96C5DC1A5B85E90035CE3A = {
+			isa = PBXGroup;
+			children = (
+				3F86128A1A5B8C3E00789682 /* BrightFutures.xcodeproj */,
+				3F8612761A5B872900789682 /* Data */,
+				3F96C5E71A5B85E90035CE3A /* BartApp */,
+				3F96C5FD1A5B85E90035CE3A /* BartAppTests */,
+				3F96C5E61A5B85E90035CE3A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F96C5E61A5B85E90035CE3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F96C5E51A5B85E90035CE3A /* BartApp.app */,
+				3F96C5FA1A5B85E90035CE3A /* BartAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F96C5E71A5B85E90035CE3A /* BartApp */ = {
+			isa = PBXGroup;
+			children = (
+				3F96C60A1A5B86030035CE3A /* Station.swift */,
+				3F96C60B1A5B86030035CE3A /* StationStore.swift */,
+				3F96C60C1A5B86030035CE3A /* BartStationsXMLParser.swift */,
+				3F96C60D1A5B86030035CE3A /* ApiXmlParser.swift */,
+				3F96C60E1A5B86030035CE3A /* Constants.swift */,
+				3F96C60F1A5B86030035CE3A /* BartApi.swift */,
+				3F96C6101A5B86030035CE3A /* BartHelpers.swift */,
+				3F96C6111A5B86030035CE3A /* RichString.swift */,
+				3F96C5EA1A5B85E90035CE3A /* AppDelegate.swift */,
+				3F96C5EC1A5B85E90035CE3A /* ViewController.swift */,
+				3F96C5EE1A5B85E90035CE3A /* Main.storyboard */,
+				3F96C5F11A5B85E90035CE3A /* Images.xcassets */,
+				3F96C5F31A5B85E90035CE3A /* LaunchScreen.xib */,
+				3F96C5E81A5B85E90035CE3A /* Supporting Files */,
+			);
+			path = BartApp;
+			sourceTree = "<group>";
+		};
+		3F96C5E81A5B85E90035CE3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F96C5E91A5B85E90035CE3A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3F96C5FD1A5B85E90035CE3A /* BartAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F96C61A1A5B860B0035CE3A /* StationStoreTests.swift */,
+				3F96C6001A5B85E90035CE3A /* BartAppTests.swift */,
+				3F96C5FE1A5B85E90035CE3A /* Supporting Files */,
+			);
+			path = BartAppTests;
+			sourceTree = "<group>";
+		};
+		3F96C5FE1A5B85E90035CE3A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F96C5FF1A5B85E90035CE3A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F96C5E41A5B85E90035CE3A /* BartApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F96C6041A5B85E90035CE3A /* Build configuration list for PBXNativeTarget "BartApp" */;
+			buildPhases = (
+				3F96C5E11A5B85E90035CE3A /* Sources */,
+				3F96C5E21A5B85E90035CE3A /* Frameworks */,
+				3F96C5E31A5B85E90035CE3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F8612941A5B8C4C00789682 /* PBXTargetDependency */,
+			);
+			name = BartApp;
+			productName = BartApp;
+			productReference = 3F96C5E51A5B85E90035CE3A /* BartApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F96C5F91A5B85E90035CE3A /* BartAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F96C6071A5B85E90035CE3A /* Build configuration list for PBXNativeTarget "BartAppTests" */;
+			buildPhases = (
+				3F96C5F61A5B85E90035CE3A /* Sources */,
+				3F96C5F71A5B85E90035CE3A /* Frameworks */,
+				3F96C5F81A5B85E90035CE3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F96C5FC1A5B85E90035CE3A /* PBXTargetDependency */,
+			);
+			name = BartAppTests;
+			productName = BartAppTests;
+			productReference = 3F96C5FA1A5B85E90035CE3A /* BartAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F96C5DD1A5B85E90035CE3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = FireMuzzy;
+				TargetAttributes = {
+					3F96C5E41A5B85E90035CE3A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					3F96C5F91A5B85E90035CE3A = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3F96C5E41A5B85E90035CE3A;
+					};
+				};
+			};
+			buildConfigurationList = 3F96C5E01A5B85E90035CE3A /* Build configuration list for PBXProject "BartApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F96C5DC1A5B85E90035CE3A;
+			productRefGroup = 3F96C5E61A5B85E90035CE3A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3F86128B1A5B8C3E00789682 /* Products */;
+					ProjectRef = 3F86128A1A5B8C3E00789682 /* BrightFutures.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3F96C5E41A5B85E90035CE3A /* BartApp */,
+				3F96C5F91A5B85E90035CE3A /* BartAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3F8612901A5B8C3E00789682 /* BrightFutures.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BrightFutures.framework;
+			remoteRef = 3F86128F1A5B8C3E00789682 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F8612921A5B8C3E00789682 /* BrightFuturesTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BrightFuturesTests.xctest;
+			remoteRef = 3F8612911A5B8C3E00789682 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F96C5E31A5B85E90035CE3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F8612831A5B872900789682 /* sample_dest_api_out.xml in Resources */,
+				3F8612861A5B872900789682 /* sample_routeinfo.xml in Resources */,
+				3F96C5F01A5B85E90035CE3A /* Main.storyboard in Resources */,
+				3F8612841A5B872900789682 /* sample_estimates_16th.xml in Resources */,
+				3F8612801A5B872900789682 /* bart_stations.xml in Resources */,
+				3F96C5F51A5B85E90035CE3A /* LaunchScreen.xib in Resources */,
+				3F8612871A5B872900789682 /* sample_routes_api.xml in Resources */,
+				3F8612811A5B872900789682 /* sample_api_out.xml in Resources */,
+				3F8612881A5B872900789682 /* sample_stations.xml in Resources */,
+				3F8612851A5B872900789682 /* sample_estimates_api_out_bad.xml in Resources */,
+				3F8612821A5B872900789682 /* sample_api_out_2.xml in Resources */,
+				3F96C5F21A5B85E90035CE3A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F96C5F81A5B85E90035CE3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F96C5E11A5B85E90035CE3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F96C6191A5B86030035CE3A /* RichString.swift in Sources */,
+				3F96C6131A5B86030035CE3A /* StationStore.swift in Sources */,
+				3F96C6151A5B86030035CE3A /* ApiXmlParser.swift in Sources */,
+				3F96C5ED1A5B85E90035CE3A /* ViewController.swift in Sources */,
+				3F96C6171A5B86030035CE3A /* BartApi.swift in Sources */,
+				3F96C6181A5B86030035CE3A /* BartHelpers.swift in Sources */,
+				3F96C6121A5B86030035CE3A /* Station.swift in Sources */,
+				3F96C6161A5B86030035CE3A /* Constants.swift in Sources */,
+				3F96C5EB1A5B85E90035CE3A /* AppDelegate.swift in Sources */,
+				3F96C6141A5B86030035CE3A /* BartStationsXMLParser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F96C5F61A5B85E90035CE3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F86126E1A5B870000789682 /* Station.swift in Sources */,
+				3F86126F1A5B870000789682 /* StationStore.swift in Sources */,
+				3F8612701A5B870000789682 /* BartStationsXMLParser.swift in Sources */,
+				3F8612711A5B870000789682 /* ApiXmlParser.swift in Sources */,
+				3F8612721A5B870000789682 /* Constants.swift in Sources */,
+				3F8612731A5B870000789682 /* BartApi.swift in Sources */,
+				3F8612741A5B870000789682 /* BartHelpers.swift in Sources */,
+				3F8612751A5B870000789682 /* RichString.swift in Sources */,
+				3F96C61B1A5B860B0035CE3A /* StationStoreTests.swift in Sources */,
+				3F96C6011A5B85E90035CE3A /* BartAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F8612941A5B8C4C00789682 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			targetProxy = 3F8612931A5B8C4C00789682 /* PBXContainerItemProxy */;
+		};
+		3F96C5FC1A5B85E90035CE3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F96C5E41A5B85E90035CE3A /* BartApp */;
+			targetProxy = 3F96C5FB1A5B85E90035CE3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F96C5EE1A5B85E90035CE3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F96C5EF1A5B85E90035CE3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F96C5F31A5B85E90035CE3A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F96C5F41A5B85E90035CE3A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F96C6021A5B85E90035CE3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F96C6031A5B85E90035CE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F96C6051A5B85E90035CE3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BartApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3F96C6061A5B85E90035CE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BartApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3F96C6081A5B85E90035CE3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BartAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BartApp.app/BartApp";
+			};
+			name = Debug;
+		};
+		3F96C6091A5B85E90035CE3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BartAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BartApp.app/BartApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F96C5E01A5B85E90035CE3A /* Build configuration list for PBXProject "BartApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F96C6021A5B85E90035CE3A /* Debug */,
+				3F96C6031A5B85E90035CE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F96C6041A5B85E90035CE3A /* Build configuration list for PBXNativeTarget "BartApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F96C6051A5B85E90035CE3A /* Debug */,
+				3F96C6061A5B85E90035CE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F96C6071A5B85E90035CE3A /* Build configuration list for PBXNativeTarget "BartAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F96C6081A5B85E90035CE3A /* Debug */,
+				3F96C6091A5B85E90035CE3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F96C5DD1A5B85E90035CE3A /* Project object */;
+}

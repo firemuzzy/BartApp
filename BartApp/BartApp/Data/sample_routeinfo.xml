@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <uri><![CDATA[http://api.bart.gov/api/route.aspx?cmd=routeinfo&route=8]]></uri>
+  <sched_num>34</sched_num>
+  <routes>
+    <route>
+      <name>Millbrae/Daly City - Richmond</name>
+      <abbr>MLBR-RICH</abbr>
+      <routeID>ROUTE 8</routeID>
+      <number>8</number>
+      <origin>MLBR</origin>
+      <destination>RICH</destination>
+      <direction />
+      <color>#ff0000</color>
+      <holidays>0</holidays>
+      <num_stns>23</num_stns>
+      <config>
+        <station>MLBR</station>
+        <station>SBRN</station>
+        <station>SSAN</station>
+        <station>COLM</station>
+        <station>DALY</station>
+        <station>BALB</station>
+        <station>GLEN</station>
+        <station>24TH</station>
+        <station>16TH</station>
+        <station>CIVC</station>
+        <station>POWL</station>
+        <station>MONT</station>
+        <station>EMBR</station>
+        <station>WOAK</station>
+        <station>12TH</station>
+        <station>19TH</station>
+        <station>MCAR</station>
+        <station>ASHB</station>
+        <station>DBRK</station>
+        <station>NBRK</station>
+        <station>PLZA</station>
+        <station>DELN</station>
+        <station>RICH</station>
+      </config>
+    </route>
+  </routes>
+  <message />
+</root>

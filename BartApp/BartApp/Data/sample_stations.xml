@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <uri><![CDATA[http://api.bart.gov/api/stn.aspx?cmd=stns]]></uri>
+  <stations>
+    <station>
+      <name>12th St. Oakland City Center</name>
+      <abbr>12TH</abbr>
+      <gtfs_latitude>37.803664</gtfs_latitude>
+      <gtfs_longitude>-122.271604</gtfs_longitude>
+      <address>1245 Broadway</address>
+      <city>Oakland</city>
+      <county>alameda</county>
+      <state>CA</state>
+      <zipcode>94612</zipcode>
+    </station>
+    <station>
+      <name>16th St. Mission</name>
+      <abbr>16TH</abbr>
+      <gtfs_latitude>37.765062</gtfs_latitude>
+      <gtfs_longitude>-122.419694</gtfs_longitude>
+      <address>2000 Mission Street</address>
+      <city>San Francisco</city>
+      <county>sanfrancisco</county>
+      <state>CA</state>
+      <zipcode>94110</zipcode>
+    </station>
+    <station>
+      <name>Montgomery St.</name>
+      <abbr>MONT</abbr>
+      <gtfs_latitude>37.789256</gtfs_latitude>
+      <gtfs_longitude>-122.401407</gtfs_longitude>
+      <address>598 Market Street</address>
+      <city>San Francisco</city>
+      <county>sanfrancisco</county>
+      <state>CA</state>
+      <zipcode>94104</zipcode>
+    </station>
+    <station>
+      <name>Rockridge</name>
+      <abbr>ROCK</abbr>
+      <gtfs_latitude>37.844601</gtfs_latitude>
+      <gtfs_longitude>-122.251793</gtfs_longitude>
+      <address>5660 College Avenue</address>
+      <city>Oakland</city>
+      <county>alameda</county>
+      <state>CA</state>
+      <zipcode>94618</zipcode>
+    </station>
+    <station>
+      <name>San Francisco Int'l Airport</name>
+      <abbr>SFIA</abbr>
+      <gtfs_latitude>37.616035</gtfs_latitude>
+      <gtfs_longitude>-122.392612</gtfs_longitude>
+      <address>International Terminal, Level 3</address>
+      <city>San Francisco Int'l Airport</city>
+      <county>sanmateo</county>
+      <state>CA</state>
+      <zipcode>94128</zipcode>
+    </station>
+    <station>
+      <name>South San Francisco</name>
+      <abbr>SSAN</abbr>
+      <gtfs_latitude>37.664174</gtfs_latitude>
+      <gtfs_longitude>-122.444116</gtfs_longitude>
+      <address>1333 Mission Road</address>
+      <city>South San Francisco</city>
+      <county>sanmateo</county>
+      <state>CA</state>
+      <zipcode>94080</zipcode>
+    </station>
+  </stations>
+  <message />
+</root>

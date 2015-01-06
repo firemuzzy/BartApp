@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <uri><![CDATA[http://api.bart.gov/api/sched.aspx?cmd=depart&orig=ASHB&dest=CIVC&date=now&b=2&a=2&l=1]]></uri>
+  <origin>ASHB</origin>
+  <destination>CIVC</destination>
+  <sched_num>34</sched_num>
+  <schedule>
+    <date>Nov 1, 2014</date>
+    <time>2:11 PM</time>
+    <before>2</before>
+    <after>2</after>
+    <request>
+      <trip origin="ASHB" destination="CIVC" fare="3.75" origTimeMin="2:01 PM" origTimeDate="11/01/2014 " destTimeMin="2:26 PM" destTimeDate="11/01/2014" clipper="1.40">
+        <leg order="1" transfercode="" origin="ASHB" destination="CIVC" origTimeMin="2:01 PM" origTimeDate="11/01/2014" destTimeMin="2:26 PM" destTimeDate="11/01/2014" line="ROUTE 7" bikeflag="1" trainHeadStation="DALY" trainIdx="16" />
+      </trip>
+      <trip origin="ASHB" destination="CIVC" fare="3.75" origTimeMin="2:10 PM" origTimeDate="11/01/2014 " destTimeMin="2:36 PM" destTimeDate="11/01/2014" clipper="1.40">
+        <leg order="1" transfercode="T" origin="ASHB" destination="MCAR" origTimeMin="2:10 PM" origTimeDate="11/01/2014" destTimeMin="2:15 PM" destTimeDate="11/01/2014" line="ROUTE 4" bikeflag="1" trainHeadStation="FRMT" trainIdx="25" />
+        <leg order="2" transfercode="" origin="MCAR" destination="CIVC" origTimeMin="2:15 PM" origTimeDate="11/01/2014" destTimeMin="2:36 PM" destTimeDate="11/01/2014" line="ROUTE 1" bikeflag="1" trainHeadStation="MLBR" trainIdx="25" />
+      </trip>
+      <trip origin="ASHB" destination="CIVC" fare="3.75" origTimeMin="2:21 PM" origTimeDate="11/01/2014 " destTimeMin="2:46 PM" destTimeDate="11/01/2014" clipper="1.40">
+        <leg order="1" transfercode="" origin="ASHB" destination="CIVC" origTimeMin="2:21 PM" origTimeDate="11/01/2014" destTimeMin="2:46 PM" destTimeDate="11/01/2014" line="ROUTE 7" bikeflag="1" trainHeadStation="DALY" trainIdx="17" />
+      </trip>
+      <trip origin="ASHB" destination="CIVC" fare="3.75" origTimeMin="2:30 PM" origTimeDate="11/01/2014 " destTimeMin="2:56 PM" destTimeDate="11/01/2014" clipper="1.40">
+        <leg order="1" transfercode="T" origin="ASHB" destination="MCAR" origTimeMin="2:30 PM" origTimeDate="11/01/2014" destTimeMin="2:35 PM" destTimeDate="11/01/2014" line="ROUTE 4" bikeflag="1" trainHeadStation="FRMT" trainIdx="26" />
+        <leg order="2" transfercode="" origin="MCAR" destination="CIVC" origTimeMin="2:35 PM" origTimeDate="11/01/2014" destTimeMin="2:56 PM" destTimeDate="11/01/2014" line="ROUTE 1" bikeflag="1" trainHeadStation="MLBR" trainIdx="26" />
+      </trip>
+    </request>
+  </schedule>
+  <message>
+    <co2_emissions><![CDATA[<p>CO<sub>2</sub> emissions saved by this BART trip: <strong>9.5 pounds.</strong> <a href="http://www.bart.gov/guide/carbon">Read more</a></p>]]></co2_emissions>
+    <legend>bikeflag: 1 = bikes allowed. 0 = no bikes allowed. transfercode: blank = no transfer, N = normal transfer, T = timed transfer, connecting trains will wait up to five minutes for transferring passengers. S = scheduled transfer, connecting trains will not wait for transferring passengers if there is a delay.</legend>
+  </message>
+</root>
