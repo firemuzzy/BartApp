@@ -76,7 +76,7 @@ class StationStoreTests: XCTestCase {
     
     var dictO: Dictionary<String, Station>? = nil
     
-    if let dictValue = store.dummyAbbrDictF().forced(1)?.value {
+    if let dictValue = store.dummyAbbrDictF().forced(100)?.value {
       dictO = dictValue
     } else {
       XCTFail("should have succeded")

@@ -130,13 +130,39 @@ class StationStore {
   }
   
   func dummyAbbrDictF() -> Future<Dictionary<String, Station>> {
-    return self.dummyStationsF().map { stations -> Dictionary<String, Station> in
-      var dict: Dictionary<String, Station> = [:]
-      for station in stations {
-        dict[station.abbreviation] = station
+    let funct: Future<[Station]> = self.dummyStationsF()
+    
+    let p: Promise<Dictionary<String, Station>> = Promise()
+    
+    NSLog("Is Main queue: \(NSThread.isMainThread())")
+    let queue = NSThread.isMainThread() ? Queue.main : Queue.global
+    
+    funct.onComplete(context: queue) { res in
+      switch (res) {
+      case .Failure(let e):
+        NSLog("error")
+        p.error(e)
+      case .Success(let response):
+        NSLog("success")
+        var dict:Dictionary<String, Station> = [:]
+        for station in response.value {
+          dict[station.abbreviation] = station
+        }
+        
+        p.completeWith(Future.succeeded(dict))
       }
-      return dict
     }
+    
+    return p.future
+  
+//    var fut = funct.flatMap({ (stations) -> Result<Dictionary<String, Station>> in
+//      var dict: Dictionary<String, Station> = [:]
+//      for station in stations {
+//        dict[station.abbreviation] = station
+//      }
+//      return Result.Success(Box(dict))
+//    })
+//    return fut
   }
   
   func abbrDictF() -> Future<Dictionary<String, Station>> {
